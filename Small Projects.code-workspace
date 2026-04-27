@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../prot"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Small Projects"
+	}
+}

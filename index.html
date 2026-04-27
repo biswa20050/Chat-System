@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Realtime Chat</title>
+        <link rel="stylesheet" href="style.CSS">
+    </head>
+    <body>
+        <div class="chat-wrapper">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="header-top">
+                    <div class="user-info">
+                        <div class="user-avatar">You</div>
+                        <div class="user-details">
+                            <h3 class="user-name">Chat Room</h3>
+                            <span class="online-status">● Online</span>
+                        </div>
+                    </div>
+                    <div class="header-icons">
+                        <button class="icon-btn">📞</button>
+                        <button class="icon-btn">📹</button>
+                        <button class="icon-btn">⋮</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Container -->
+            <div class="chat-container">
+                <div class="messages-box" id="chat-box">
+                    <div class="message-date">Today</div>
+                </div>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-container">
+                <div class="input-tools">
+                    <button class="tool-btn">😊</button>
+                    <button class="tool-btn">📎</button>
+                </div>
+                <input 
+                    type="text" 
+                    id="message-input" 
+                    placeholder="Type a message..." 
+                    class="message-input">
+                <button id="send-button" class="send-btn">Send</button>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>       
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
